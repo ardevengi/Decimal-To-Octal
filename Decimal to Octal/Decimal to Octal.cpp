@@ -4,8 +4,8 @@ using namespace std;
 // Function to convert from Decimal to Octal;
 void dToO(int decimal)
 {
-    int octal[33], i=0;
-    for (i ; decimal != 0; i++)
+    int octal[33], i = 0;
+    for (i; decimal != 0; i++)
     {
         octal[i] = decimal % 8;
         decimal /= 8;
@@ -20,9 +20,12 @@ void dToO(int decimal)
 int main()
 {
     int num;
-    cout << "num:";
-    cin >> num;
-    dToO(num);
 
+    do
+    {
+        cout << "num:";
+        cin >> num;
+        dToO(num);
+    } while (num != 0);
     return 0;
 }
