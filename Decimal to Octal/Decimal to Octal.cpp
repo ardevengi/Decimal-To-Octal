@@ -8,7 +8,7 @@ void dToO(int decimal)
     for (int i = 0; decimal != 0; i++)
     {
         octal[i] = decimal % 8;
-        decimal % 8;
+        decimal / 8;
     }
     for (int j = i - 1; j >= 0; j--)
     {
